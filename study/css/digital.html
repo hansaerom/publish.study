@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Document</title>
+</head>
+<style>
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+*{margin:0;padding:0;}
+li{list-style:none;}
+a{text-decoration:none;color: #000;}
+body{font:12px/140% "����",Dotum,Verdana,Arial,AppleGothic,sans-serif}
+body{background: url(http://static.naver.net/newsstand/img/20121231/bg_bd.png);}
+
+
+
+
+.top_bar{width: 100%;height: 46px;padding-top:5px;background: url(http://static.naver.net/newsstand/img/20121231/bg_hd.png) repeat-x; }
+.top_left {float:left;margin-left:10px;}
+.top_left a:first-child{ width: 118px;height: 30px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position: 0px -80px; }
+.top_left a:last-child{ width: 228px;height: 30px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position: -120px -80px; }
+
+
+.top_right{height: 30px; float:right;width:200px;}
+.top_right li{margin-left: 10px;float:left;}
+.top_right li:first-child{margin-left:0;}
+.repair a{ width: 65px;height: 30px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position: -255px -143px; }
+.set a{ width: 50px;height: 30px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position: -330px -143px; }     
+.naver a{ width: 50px;height: 30px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position: -542px -266px; }  
+.repair a:hover{ width: 65px;height: 30px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position: -255px -54px; }
+.set a:hover   { width: 50px;height: 30px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position: -330px -54px; }     
+
+
+.top_center{height: 30px; margin:0;padding:0;}
+.top_center ul{margin-left:45%;}
+.top_center ul li:first-child{width: 89px;height: 30px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position: 0px -184px; margin-right: -5px;cursor:pointer;}
+.top_center ul li:last-child{width: 89px;height: 30px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position: -90px -150px;cursor:pointer; }
+
+.snd{width: 100%;height: 28px; margin-bottom:7px}
+.snd ul{margin-left:35%;}
+.snd li{float:left;}
+.media a{ width: 74px;height: 24px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position: 0px -251px; } 
+.all a{ width: 68px;height: 24px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position: -95px -277px; } 
+.commu a{ width: 68px;height: 24px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position:-95px -303px; }
+.it a{ width: 32px;height: 24px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position: -95px -381px; }
+.en a{ width: 52px;height: 24px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position:  -95px -329px; }
+.sport a{ width: 79px;height: 24px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position: -95px -407px; }
+.magazine a{ width: 89px;height: 24px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position: -95px -433px; }
+.area a{ width: 40px;height: 24px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position: -95px -459px; }
+
+
+.all a:hover{ width: 68px;height: 24px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position: -184px -277px; } 
+.commu a:hover{ width: 68px;height: 24px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position:-184px -303px; }
+.it a:hover{ width: 32px;height: 24px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position: -184px -381px; }
+.en a:hover{ width: 52px;height: 24px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position:  -184px -329px; }
+.sport a:hover{ width: 79px;height: 24px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position: -184px -407px; }
+.magazine a:hover{ width: 89px;height: 24px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position: -184px -433px; }
+.area a:hover{ width: 40px;height: 24px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position: -184px -459px; }
+
+
+.wrap{width:900px;height: 560px;margin:0 auto;background:url("http://static.naver.net/newsstand/img/20121231/bg_panel.png" )}
+.top{border-bottom:3px #545454 solid; width: 830px;height: 111px;margin:0 auto 7px ;padding: 5px; }
+.top h1{width: 830px;height: 55px;padding:20px 0 33px;}
+
+.promotion{width: 468px;height: 60px;margin:-65px 366px;}
+
+.optionBtn{width: 840px;height: 25px; margin-top: 40px;}
+.o_btn{width: 66px;height: 22px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position: -188px -200px;  cursor:pointer;}
+.t_btn{width: 75px;height: 22px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position: -294px -175px;  cursor:pointer;}
+.th_btn{width: 28px;height: 22px;background: url(sp_nwstd.png) no-repeat;display:inline-block;background-position: -502px -272px;  cursor:pointer;}
+
+.bottom{width: 840px;height: 380px;margin:0 auto;}
+
+.topnews{width: 245px;height: 380px;margin-right:5px;float:left;}
+.top_news{border:1px solid #E4E4E4;width: 243px;height: 267px;background:#F7F7F7;margin-bottom:8px;}
+.newimg{overflow:hidden;border: 1px gray solid;width:242px;height:150px;}
+.top_news ul{width: 215px;height: 115px;margin:0 auto;overflow: hidden;}
+.top_news h1{font-size: 15px;color: #DE2F00;line-height: 19px;margin: 5px 0;}
+.top_news p a{font-size: 12px;color: #8C8C8C;}
+.top_news p a:hover{color:#000;}
+.top_news p{width:215px;height:50px;overflow: hidden;}
+.top_news strong{color:#DE2F00;}
+.top_news strong:hover{color:#000;}
+
+
+.photo_news img{height: 80px;width:116px;}
+.photo_news p{font-size:12px;overflow: hidden;width: 110px;height: 16.8px; margin:0 auto;}
+.photo_news p a{color:#474747;}
+.photo_news li:first-child{margin-right: 5px;}
+.photo_news li{border:1px solid #E4E4E4;height: 104px;width:118px;float:left;text-align: center;background-color: #F7F7F7;}
+
+.news{ width: 315px;height: 380px;margin:auto;margin-left:254px}
+.sub_news{border:1px #E4E4E4 solid;height: 80px;background-color: #F7F7F7;margin-bottom: 7px;overflow: hidden;}
+.sub_news img{width: 105px;height: 78px;}
+.sub_news ul{width:105px;height:78px;float:left;}
+.sub_news h1{font-size:14px;margin-bottom:4px;}
+
+.sub_news p a{font-size: 12px;color:#8C8C8C; }
+.font{width:60%;float:right;margin:7px; overflow: hidden;}
+.font_center{margin: 7px 12px}
+.font_center a{color: #474747;}
+.font_center a:hover{color:#000;}
+.font a{color:#474747;}
+.font a:hover{color: #000;}
+
+
+.bottom_news{border:1px #E4E4E4 solid;width: 315px;height:202px;margin-top:2%;background-color: #F7F7F7;}
+.bottom_news li{font-size:10px;padding:1.6px 5px;width:300px;border-bottom:1px #E4E4E4 solid;margin:0 auto;} 
+.bottom_news li:last-child{border-bottom:none;}
+.bottom_news h1 a{color:#474747;font-size:12px;letter-spacing:-2px;line-height: 25px;}
+.bottom_news h2 a{color:#DE2F00;font-size:12px;letter-spacing:-2px;line-height: 25px;}
+.bottom_news h1 a:hover{color:#000;}
+.bottom_news h2 a:hover{color:#000;}
+
+
+#right_news{width: 261px;height: 380px;float:right;}
+
+.enter_news li{border:1px #000 solid;width:124px;height:110px;float:left;margin-bottom: 9px;background-color:#000}
+
+.enter_news img{width: 124px;height: 75px;}
+.enter_news a{font-size:11px; color:#838383;}
+.enter_news a:hover{color:#fff;}
+.enter_news p{margin-top:50px;text-align:center;overflow:hidden;width:116px;height: 26px;margin:0 4px; line-height: 13px;}
+.enter_news .lastimg{border:1px #E4E4E4 solid;}
+.enter_news h3{margin-top: 5px;text-align:center;overflow:hidden;width:116px;height: 50px;margin:0 auto;line-height:16px; }
+.enter_news h3 a{color:#474747;}
+.enter_news h3 a:hover{color:#000;}
+.enter_news li:last-child{margin-bottom: 0px;}
+
+.enter_news li.lastimg{background-color: #F7F7F7;height:138px;}
+
+   .times{width:150px;height:16px;margin-left:80%;margin-top: 3px;font-size: 10px;}
+   .times ul li{float: left;}
+   .times a strong{color:#4A7CE4;font-size:10px;}
+   .times li a {color:#494949;font-size:10px;}
+
+
+
+
+</style>
+<body>
+<div class="digital">
+  <div class="top_bar">
+      <div class="top_left">
+           <a href=""></a>
+           <a href=""></a>
+      </div>
+      <div class="top_right">
+        <ul>
+           <li class="repair"><a href="새로고침"></a></li>
+           <li class="set"><a href="설정"></a></li>
+           <li class="naver"><a href="네이버"></a></li>
+        </ul>
+      </div>
+      <div class="top_center">
+          <ul>
+            <li><a href="my뉴스"></a></li>
+            <li><a href="전체언론사"></a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="snd">
+      <ul>
+        <li class="media"><a href=""></a></li>
+        <li class="all"><a href=""></a></li>
+        <li class="commu"><a href=""></a></li>
+        <li class="it"><a href=""></a></li>
+        <li class="en"><a href=""></a></li>
+        <li class="sport"><a href=""></a></li>
+        <li class="magazine"><a href=""></a></li>
+        <li class="area"><a href=""></a></li>
+        
+
+      </ul>
+  </div>
+
+
+
+  <div class="wrap">
+     <div class="top">
+       <h1>
+          <a href="http://www.dt.co.kr/">
+            <img src="http://static.naver.net/newsstand/up/2015/0721/nsd134450191.png" alt="디지털타임스">
+          </a>
+      </h1>
+      <div class="promotion"> 
+         <a href="http://ad.naver.com/adclick?unit=983F&ac=5848095&src=2354560&br=1898331&rk=Ve48LQpizUQAABCNYDMAAACi&eltts=I9VqTynHk5ewFuWObUDbZQ%3D%3D&oid=&&:::cl:::">
+           <img src="http://adcreative.naver.com/ad3/1004/1004874/468_60_61412044753695.jpg" alt="한글문서서식">
+         </a>
+      </div>
+      <div class="optionBtn">
+         <button class="o_btn"><a href=""></a></button>
+         <button class="t_btn"><a href=""></a></button>
+         <button class="th_btn"><a href=""></a></button>  
+      </div>
+   </div>
+
+   <div class="bottom">
+    <div class="topnews">
+     <div class="top_news">
+      <div class="newimg">
+         <a href="http://www.dt.co.kr/contents.html?article_no=2015090802100351808001&naver=stand">
+          <img src="http://static.naver.net/newsstand/2015/0907/dt/190951/001.jpg" alt="">
+         </a>
+      </div>
+      
+      <ul>
+       <li>
+        <h1><a href="http://www.dt.co.kr/contents.html?article_no=2015090802100351808001&naver=stand">
+             <strong>3000만원대 ‘중형 전기차’… 1회 충전에 482km 질주 </strong>
+            </a>
+          </h1>
+        </li>
+         <li>
+          <p>
+            <a href="http://www.dt.co.kr/contents.html?article_no=2015090802100351808001&naver=stand">
+              순수 전기차의 대중화가 급물살을 탈 전망이다. 미국 전기차 제조업체 테슬라가 내년 3000만원대 쏘나타급 보급형 전기차를 선보이고, 현대차와 BMW, 벤츠 등 기존 완성차 업체들도 순수 전기차 양산에 본격적으로 돌입함에 따...
+            </a></p></li>
+        </ul>
+       </div>
+
+       <div class="photo_news">
+          <ul>
+           <li>
+              <a href="http://www.dt.co.kr/contents.html?article_no=2015090702100631780001&naver=stand">
+                <img src="http://static.naver.net/newsstand/2015/0907/dt/190951/002.jpg" alt="" />
+              </a>
+               <p>
+                  <a href="http://www.dt.co.kr/contents.html?article_no=2015090702100631780001&naver=stand">
+                    "VR체험 단돈 만원"
+                  </a>
+                </p>
+           </li>
+           <li>
+            <a href="http://www.dt.co.kr/contents.html?article_no=2015090602109954801003&naver=stand">
+              <img src="http://static.naver.net/newsstand/2015/0907/dt/190951/003.jpg" alt="" />
+            </a>
+            <p>
+              <a href="http://www.dt.co.kr/contents.html?article_no=2015090602109954801003&naver=stand">
+                "중국형 ‘올 뉴 투싼’ 본격 판매… 국내 모델과 다른 점은?"
+              </a>
+            </p>
+           </li>
+          </ul>
+         </div>
+        </div>
+      <div id="right_news">
+        <ul class="enter_news">
+           <li style="margin-right:9px;">
+            <a href="http://www.dt.co.kr/contents.html?article_no=2015090702109919807002&naver=stand"><img src="http://static.naver.net/newsstand/2015/0908/dt/093059/005.jpg" alt="img" /></a>
+              <p>
+                <a href="http://www.dt.co.kr/contents.html?article_no=2015090702109919807002&naver=stand">`골프여제` 박세리, 정원딸린 최고급 럭셔리 주상복합 아파트 공개</a>
+              </p>
+           </li>
+
+           <li >
+            <a href="http://www.dt.co.kr/contents.html?article_no=2015090702109919807004&naver=stand"><img src="http://static.naver.net/newsstand/2015/0908/dt/093059/006.jpg" alt="img" /></a>
+              <p>
+                <a href="http://www.dt.co.kr/contents.html?article_no=2015090702109919807004&naver=stand">카레광고 함연지, 알고보니 오뚜기家의 장녀...연예인 주식부자 5위</a>
+              </p>
+           </li>
+
+           <li style="margin-right:9px;">
+            <a href="http://www.dt.co.kr/contents.html?article_no=2015090702109919807001&naver=stand"><img src="http://static.naver.net/newsstand/2015/0908/dt/102751/007.jpg" alt="img" /></a>
+              <p>
+                <a href="http://www.dt.co.kr/contents.html?article_no=2015090702109919807001&naver=stand">윤춘호 디자이너 , 윤은혜 표절 논란에 "며칠 전 우리 옷 협찬해 간 배우인데..."</a>
+              </p>
+           </li>
+
+           <li>
+            <a href="http://www.dt.co.kr/contents.html?article_no=2015090702109919807005&naver=stand"><img src="http://static.naver.net/newsstand/2015/0908/dt/102751/008.jpg" alt="img" /></a>
+              <p>
+                <a href="http://www.dt.co.kr/contents.html?article_no=2015090702109919807005&naver=stand">헐크 새 시리즈, 수현은 `아마데우스 조` 母역으로 나올까?</a>
+              </p>
+           </li>
+
+           <li class="lastimg" style="margin-right:9px;">
+            <a href="http://www.dt.co.kr/contents.html?article_no=2015090102109922732012&naver=stand"><img src="http://static.naver.net/newsstand/2015/0908/dt/102751/009.jpg" alt="img" /></a>
+              <h3>
+                <a href="http://www.dt.co.kr/contents.html?article_no=2015090102109922732012&naver=stand">"잠 부족하면 감기 잘 걸린다"</a>
+              </h3>
+           </li>
+
+           <li class="lastimg">
+            <a href="http://www.dt.co.kr/contents.html?article_no=2015090702109919807006&naver=stand"><img src="http://static.naver.net/newsstand/2015/0908/dt/102751/010.jpg" alt="img" /></a>
+              <h3>
+                <a href="http://www.dt.co.kr/contents.html?article_no=2015090702109919807006&naver=stand">`강용석과 불륜설` 블로거 "홍콩 수영장 사진...강용석 맞다" 인정</a>
+              </h3>
+           </li>
+
+         </ul>
+       </div>
+      
+      <div class="news">
+       <div class="sub_news">
+        <ul>
+         <li><a href="http://www.dt.co.kr/contents.html?article_no=2015090802100251746001&naver=stand"><img src="http://static.naver.net/newsstand/2015/0907/dt/190951/004.jpg" alt="웹" /></a></li>
+        </ul>
+        <div class="font">
+         <li><h1><a href="">이틀만에 1000만 조회… ‘웹전용 예능콘텐츠’ 대박</a></h1></li>
+         <li><p><a href="">방송콘텐츠 `인터넷 뉴미디어`로 중심이동판도라TV 등 동영상서비스업체</a></p></li>
+        </div>
+       </div>
+       <div class="sub_news">
+        
+        <div class="font_center">
+         <li><h1><a href="http://www.dt.co.kr/contents.html?article_no=2015090702109976788002&naver=stand">3년만에 품목허가 ‘삼성 바이오시밀러’초고속 행보</a></h1></li>
+         <li><p><a href="http://www.dt.co.kr/contents.html?article_no=2015090702109976788002&naver=stand">류마티스·건선성 관절염 등 치료약 `브렌시스` 이르면 연말 출시삼성이 미래신수종 사업인 ..</a></p></li>
+        </div>
+       </div>
+       <div class="bottom_news">
+        <ul>
+         <li>
+            <h2>
+              <a href="http://www.dt.co.kr/contents.html?article_no=2015090702109976798005&naver=stand">· 맛도 서비스도 한국처럼… ‘정통 한식’대륙을 노리다</a>
+            </h2>
+          </li>
+         <li>
+          <h1>
+            <a href="http://www.dt.co.kr/contents.html?article_no=2015090702101032808001&naver=stand">· 고성능 ‘N 스포츠’내놓은 현대차, BMW 벤치마킹…</a>
+          </h1>
+        </li>
+         <li>
+          <h1>
+            <a href="http://www.dt.co.kr/contents.html?article_no=2015090802100831780001&naver=stand">· 삼성 수익효자는? 갤노트5 보단 `삼성페이`</a>
+          </h1>
+        </li>
+         <li>
+          <h2>
+            <a href="http://www.dt.co.kr/contents.html?article_no=2015090802101832808001&naver=stand">· 똑딱이냐, DSLR이냐… ‘나만의 카메라’고르는 법</a>
+          </h2>
+        </li>
+         <li>
+          <h1>
+            <a href="http://www.dt.co.kr/contents.html?article_no=2015090702109976798009&naver=stand">· 홈플러스, 7조2000억에 ‘MBK파트너스’품에…</a>
+          </h1>
+        </li>
+         <li>
+          <h1>
+            <a href="http://www.dt.co.kr/contents.html?article_no=2015090702100151781001&naver=stand">· TV패러다임 OLED로 급속 전환… LG 뚝심 통했다</a>
+          </h1>
+        </li>
+         <li>
+          <h1 style="border:0px">
+            <a href="http://www.dt.co.kr/contents.html?article_no=2015090702100351794001&naver=stand">· ‘페이 전쟁’ 승기 잡은 삼성, 애플-구글엔 없는 장점이…</a>
+          </h1>
+        </li> 
+             
+        </ul>
+       </div>
+       
+       
+      </div>
+      
+      
+     </div>
+
+        <div class="times">
+         <ul>
+           <li><a href="http://www.dt.co.kr/"><strong>디지털타임즈</strong></a></li>
+           <il><a href="http://www.dt.co.kr/">사이트 바로가기</a></il>
+         </ul>
+        </div>
+
+
+  </div>
+</div>
+</body>
+</html>
